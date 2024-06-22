@@ -6,6 +6,8 @@ let e = document.getElementById('for2')
 let f = document.getElementById('btn2')
 let g = document.getElementById('h')
 let h = document.getElementById('he')
+let submit=document.querySelector('#btn1')
+
 c.style.display = 'none'
 e.style.display = 'none'
 h.style.display = 'none'
@@ -35,4 +37,15 @@ c.addEventListener('click', () => {
     },1000)
 
 })
+
+
+submit.addEventListener('click',()=>{
+    if(a.value=='' && b.value==''){
+        alert('please fill the form')
+    }
+
+    a.value=''
+    b.value=''
+})
+
 
